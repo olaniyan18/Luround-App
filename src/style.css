@@ -330,6 +330,12 @@ svg {
   box-shadow: 0px 4px 7px 0px rgba(2, 3, 3, 0.05);
 }
 
+.otherdetails {
+  font-size: 20px;
+  font-weight: 600;
+  color: rgba(29, 46, 46, 1);
+}
+
 .detailsicon {
   display: grid;
   gap: 24px;

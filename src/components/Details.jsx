@@ -9,7 +9,7 @@ import facebook from "../elements/facebook.jpg";
 export default function Details() {
   return (
     <div className='details'>
-      <label>Other Details</label>
+      <label className='otherdetails'>Other Details</label>
       <div className='detailsicon'>
         <div className='icondetails'>
           <img src={location} />
