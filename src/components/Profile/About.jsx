@@ -18,6 +18,8 @@ export default function About() {
         pariatu.Sit amet, consectetur adipiscing elit, sed do eiusmod tempor
         incididunt ut labore.
       </p>
+      <hr />
+      <div>Education</div>
     </div>
   );
 }

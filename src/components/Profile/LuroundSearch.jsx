@@ -1,9 +1,21 @@
 /** @format */
 import { useState } from "react";
 import "../style.css";
-import image from "../elements/Profile.jpg";
+import image3 from "../elements/image2.png";
+import image2 from "../elements/image.png";
 export default function Search() {
   const [value, setValue] = useState("");
+
+  function profileDown() {
+    var profiledown = document.querySelector(".profileedit");
+
+    if (profiledown.style.visibility === "hidden") {
+      profiledown.style.visibility = "visible";
+      profiledown.classList.toggle("active");
+    } else {
+      profiledown.style.visibility = "hidden";
+    }
+  }
   return (
     <div className='searchbar'>
       <div className='searchinput'>
@@ -84,9 +96,9 @@ export default function Search() {
             />
           </svg>
         </li>
-        <li className='icons'>
+        <li className='icons active' onClick={profileDown}>
           <div className='imagearrow'>
-            <img className='smallerimage' src={image} />
+            <img className='smallerimage' src={image2} />
             <svg
               className='arrow'
               width='16'
@@ -106,6 +118,20 @@ export default function Search() {
             </svg>
           </div>
         </li>
+
+        <div className='profileedit'>
+          <div className='imagename'>
+            <img src={image3} />
+            <div className='namebutton'>
+              <div className='spanname'>
+                <span className='ronaldname'>Ronald Richards</span>
+                <span className='email'>ronaldrichards@gmail.com</span>
+              </div>
+              <button>Edit Profile</button>
+            </div>
+          </div>
+          <button>Log out</button>
+        </div>
         <li className='icons'>
           <button className='share'>Share Profile</button>
         </li>
